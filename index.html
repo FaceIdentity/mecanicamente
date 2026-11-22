@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oficina Mecânica Exemplo</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #ffffff;
+      color: #1a4fa0;
+      font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    a { color: #1a4fa0; }
+
+    .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+    /* Cabeçalho */
+    header {
+      border-bottom: 2px solid #1a4fa0;
+      padding: 18px 0;
+    }
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .logo { font-size: 1.5rem; font-weight: 700; }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    /* Destaque */
+    .hero { text-align: center; padding: 70px 0 60px; }
+    .hero h1 { font-size: 2.4rem; margin-bottom: 12px; }
+    .hero p { font-size: 1.15rem; margin-bottom: 28px; }
+    .botao {
+      display: inline-block;
+      border: 2px solid #1a4fa0;
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .botao:hover { background: #1a4fa0; color: #ffffff; }
+
+    /* Seções */
+    section { padding: 50px 0; }
+    section h2 { font-size: 1.8rem; text-align: center; margin-bottom: 30px; }
+
+    .servicos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #1a4fa0;
+      border-radius: 8px;
+      padding: 22px;
+    }
+    .card h3 { margin-bottom: 8px; }
+
+    .sobre p { max-width: 700px; margin: 0 auto; text-align: center; }
+
+    .contato ul { list-style: none; text-align: center; }
+    .contato li { margin-bottom: 8px; }
+
+    footer {
+      border-top: 2px solid #1a4fa0;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">🔧 Oficina Mecânica Exemplo</div>
+      <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero container">
+      <h1>Cuidamos do seu carro como se fosse nosso</h1>
+      <p>Manutenção, revisão e reparos com qualidade e preço justo.</p>
+      <a class="botao" href="#contato">Agende um horário</a>
+    </div>
+
+    <section id="servicos">
+      <div class="container">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos">
+          <div class="card">
+            <h3>Troca de Óleo</h3>
+            <p>Troca de óleo e filtros com produtos de qualidade.</p>
+          </div>
+          <div class="card">
+            <h3>Freios</h3>
+            <p>Revisão e troca de pastilhas, discos e fluido de freio.</p>
+          </div>
+          <div class="card">
+            <h3>Suspensão</h3>
+            <p>Amortecedores, molas, alinhamento e balanceamento.</p>
+          </div>
+          <div class="card">
+            <h3>Revisão Geral</h3>
+            <p>Check-up completo para viajar com segurança.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <div class="container">
+        <h2>Sobre Nós</h2>
+        <p>
+          Somos uma oficina de bairro com profissionais experientes,
+          atendimento honesto e foco na segurança do cliente.
+          Trabalhamos com carros nacionais e importados.
+        </p>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <div class="container">
+        <h2>Contato</h2>
+        <ul>
+          <li>📞 Telefone: (00) 0000-0000</li>
+          <li>📍 Endereço: Rua Exemplo, 123 – Centro</li>
+          <li>🕗 Segunda a sexta: 8h às 18h | Sábado: 8h às 12h</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Oficina Mecânica Exemplo — site de teste</p>
+  </footer>
+
+</body>
+</html>
